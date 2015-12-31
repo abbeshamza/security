@@ -1,0 +1,13 @@
+extends layout
+block content
+ .container
+   h1 Contact
+   p Please write your message and send it to the administrator .
+  form(method='post',action='contact')
+   .form-group
+    label Subject
+    input.form-control(type="text" name="subject" placeholder="Subject of the message")
+   .form-group
+    label Message
+    textarea.form-control(name='message',placeholder='enter your message...')
+   input.btn.btn-default(name='submit',type='submit',value='Send')
